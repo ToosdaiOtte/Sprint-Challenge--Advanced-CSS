@@ -1,1 +1,23 @@
 // Mixins Here
+
+.text() {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.navStyle {
+    background: @nav-bg;
+    border-bottom: @nav-border;
+    color: @nav-font;
+}
+
+.display(@direction) {
+    display: flex;
+    flex-direction: @direction;
+}
+
+.btn(@bg @fc) {
+    background: @bg;
+    color: @fc;
+}
+
