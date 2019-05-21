@@ -67,6 +67,12 @@
     .walk-text {
       width: 50%;
 
+      @media @phone {
+        width: 100%;
+        box-sizing: border-box;
+        padding-top: 20px;
+      }
+
       h3 {
         margin-bottom: 10px;
       }
@@ -82,10 +88,10 @@
         padding-top: 3%;
         padding-bottom: 3%;
         margin-right: 70%;
-        .btn(@btn-bg-color white);
+        .btn(@btn-bg-color, white);
 
         &:hover {
-          .btn(@shuttle-gray @ebony-clay);
+          .btn(@shuttle-gray, @ebony-clay);
         }
 
         @media @phone {
@@ -97,6 +103,11 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        margin: 0 auto;
+      }
       
       img {
         width: 100%;
